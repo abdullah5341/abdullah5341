@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 150" width="1000" height="150" role="img" aria-label="Impact: 32% less machine idle time, 27% more throughput, three roles in one year, First Division B.E. from NED">
+<style>@keyframes up{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}.t{animation:up .8s ease-out backwards}</style>
+<g class="t" style="animation-delay:0.15s">
+<rect x="0.0" y="4" width="238.0" height="142" rx="16" fill="#100c2a" stroke="#2e2470"/>
+<rect x="0.0" y="4" width="238.0" height="4" rx="2" fill="#a78bfa"/>
+<text x="22.0" y="70" style="font-family:'Segoe UI',Inter,-apple-system,Helvetica,Arial,sans-serif" font-size="42" font-weight="800" fill="#a78bfa">−32%</text>
+<text x="22.0" y="100" style="font-family:'Segoe UI',Inter,-apple-system,Helvetica,Arial,sans-serif" font-size="15" font-weight="600" fill="#ece9ff">machine idle time</text>
+<text x="22.0" y="124" style="font-family:'JetBrains Mono','Fira Code',ui-monospace,Menlo,Consolas,monospace" font-size="11.5" fill="#8f86c9">Atlas Autos factory pilot</text>
+</g><g class="t" style="animation-delay:0.33s">
+<rect x="254.0" y="4" width="238.0" height="142" rx="16" fill="#100c2a" stroke="#2e2470"/>
+<rect x="254.0" y="4" width="238.0" height="4" rx="2" fill="#67e8f9"/>
+<text x="276.0" y="70" style="font-family:'Segoe UI',Inter,-apple-system,Helvetica,Arial,sans-serif" font-size="42" font-weight="800" fill="#67e8f9">+27%</text>
+<text x="276.0" y="100" style="font-family:'Segoe UI',Inter,-apple-system,Helvetica,Arial,sans-serif" font-size="15" font-weight="600" fill="#ece9ff">plant throughput</text>
+<text x="276.0" y="124" style="font-family:'JetBrains Mono','Fira Code',ui-monospace,Menlo,Consolas,monospace" font-size="11.5" fill="#8f86c9">my scheduling optimiser</text>
+</g><g class="t" style="animation-delay:0.51s">
+<rect x="508.0" y="4" width="238.0" height="142" rx="16" fill="#100c2a" stroke="#2e2470"/>
+<rect x="508.0" y="4" width="238.0" height="4" rx="2" fill="#f0abfc"/>
+<text x="530.0" y="70" style="font-family:'Segoe UI',Inter,-apple-system,Helvetica,Arial,sans-serif" font-size="42" font-weight="800" fill="#f0abfc">3</text>
+<text x="530.0" y="100" style="font-family:'Segoe UI',Inter,-apple-system,Helvetica,Arial,sans-serif" font-size="15" font-weight="600" fill="#ece9ff">roles in 1 year</text>
+<text x="530.0" y="124" style="font-family:'JetBrains Mono','Fira Code',ui-monospace,Menlo,Consolas,monospace" font-size="11.5" fill="#8f86c9">industry &amp; academia</text>
+</g><g class="t" style="animation-delay:0.69s">
+<rect x="762.0" y="4" width="238.0" height="142" rx="16" fill="#100c2a" stroke="#2e2470"/>
+<rect x="762.0" y="4" width="238.0" height="4" rx="2" fill="#4ade80"/>
+<text x="784.0" y="70" style="font-family:'Segoe UI',Inter,-apple-system,Helvetica,Arial,sans-serif" font-size="42" font-weight="800" fill="#4ade80">1st</text>
+<text x="784.0" y="100" style="font-family:'Segoe UI',Inter,-apple-system,Helvetica,Arial,sans-serif" font-size="15" font-weight="600" fill="#ece9ff">Division B.E.</text>
+<text x="784.0" y="124" style="font-family:'JetBrains Mono','Fira Code',ui-monospace,Menlo,Consolas,monospace" font-size="11.5" fill="#8f86c9">NED University, Karachi</text>
+</g>
+</svg>

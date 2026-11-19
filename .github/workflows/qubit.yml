@@ -1,0 +1,54 @@
+name: Collapse the qubit
+
+on:
+  issues:
+    types: [opened]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: qubit
+  cancel-in-progress: false
+
+jobs:
+  measure:
+    if: github.event_name == 'workflow_dispatch' || startsWith(github.event.issue.title, 'qubit|')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Measure
+        if: github.event_name == 'issues'
+        env:
+          ISSUE_TITLE: ${{ github.event.issue.title }}
+          PLAYER: ${{ github.event.issue.user.login }}
+        run: python scripts/qubit.py measure
+
+      - name: Re-render only
+        if: github.event_name == 'workflow_dispatch'
+        run: python scripts/qubit.py render
+
+      - name: Commit
+        run: |
+          git config user.name "qubit-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md data/qubit.json assets/state.svg
+          git diff --cached --quiet || git commit -m "⚛️ qubit measured"
+          git pull --rebase
+          git push
+
+      - name: Reply and close
+        if: github.event_name == 'issues'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NUMBER: ${{ github.event.issue.number }}
+        run: |
+          gh issue comment "$NUMBER" --repo "$GITHUB_REPOSITORY" --body-file comment.md
+          gh issue close "$NUMBER" --repo "$GITHUB_REPOSITORY"
